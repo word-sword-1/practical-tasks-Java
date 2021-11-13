@@ -1,0 +1,126 @@
+Запущен по таймеру
+Запущен по таймеру
+Started by user [8mha:////4JMMNdSg7Yn1PbdihT+wvEg8WylLmewbU+4mX2FxLmAjAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgZu/dLi1CL9xJTczDwAS4B5WsAAAAA=[0mIryna Hryhoryeva
+Running as SYSTEM
+Собирается удаленно на [8mha:////4DZ9y23XzGX/IGkBvB3O5YqAFI05lU9bJtUxgwvZ7CrBAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQifXdPoBHZiQA0trnYxgAAAA==[0mGIrinka (ff chrome x64 8 win) in workspace c:\ProgramData\slave\workspace\Hurt Me Plenty
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/vitalliuss/helloci
+ > git.exe init c:\ProgramData\slave\workspace\Hurt Me Plenty # timeout=10
+Fetching upstream changes from https://github.com/vitalliuss/helloci
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.28.0.windows.1'
+ > git.exe fetch --tags --force --progress -- https://github.com/vitalliuss/helloci +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/vitalliuss/helloci # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+Checking out Revision 71518a34152cb6c6039a2443ced60af30a31f14c (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 71518a34152cb6c6039a2443ced60af30a31f14c # timeout=10
+Commit message: "Merge pull request #16 from EvgeniyRozhenko/fix-pom-utf8"
+ > git.exe rev-list --no-walk 71518a34152cb6c6039a2443ced60af30a31f14c # timeout=10
+[Hurt Me Plenty] $ cmd.exe /C "c:\apache-maven-3.8.3-bin\bin\mvn.cmd -f Java/pom.xml test && exit %%ERRORLEVEL%%"
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.github.vitalliuss.helloci:hello-ci >---------------
+[INFO] Building hello-ci 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4EkZDIzG2HKj4C9Cbt9x8MCMUvDrV1JhaLySiMSJOI0CAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hello-ci ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory c:\ProgramData\slave\workspace\Hurt Me Plenty\Java\src\main\resources
+[INFO] 
+[8mha:////4EkZDIzG2HKj4C9Cbt9x8MCMUvDrV1JhaLySiMSJOI0CAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ hello-ci ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to c:\ProgramData\slave\workspace\Hurt Me Plenty\Java\target\classes
+[INFO] 
+[8mha:////4EkZDIzG2HKj4C9Cbt9x8MCMUvDrV1JhaLySiMSJOI0CAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hello-ci ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory c:\ProgramData\slave\workspace\Hurt Me Plenty\Java\src\test\resources
+[INFO] 
+[8mha:////4EkZDIzG2HKj4C9Cbt9x8MCMUvDrV1JhaLySiMSJOI0CAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ hello-ci ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to c:\ProgramData\slave\workspace\Hurt Me Plenty\Java\target\test-classes
+[INFO] 
+[8mha:////4EkZDIzG2HKj4C9Cbt9x8MCMUvDrV1JhaLySiMSJOI0CAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ hello-ci ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.github.vitalliuss.helloci.AppTest
+[8mha:////4Nwo6PJElhMnop8q1Jf4XQkuXCOG37zp7YXXtgJeQHiwAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Tests run: 5, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 1.134 s <<< FAILURE! - in com.github.vitalliuss.helloci.AppTest
+[8mha:////4Nwo6PJElhMnop8q1Jf4XQkuXCOG37zp7YXXtgJeQHiwAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] testShouldBeFailed(com.github.vitalliuss.helloci.AppTest)  Time elapsed: 0.042 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.github.vitalliuss.helloci.AppTest.testShouldBeFailed(AppTest.java:21)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[8mha:////4Nwo6PJElhMnop8q1Jf4XQkuXCOG37zp7YXXtgJeQHiwAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Failures: 
+[8mha:////4Nwo6PJElhMnop8q1Jf4XQkuXCOG37zp7YXXtgJeQHiwAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR]   AppTest.testShouldBeFailed:21
+[INFO] 
+[8mha:////4Nwo6PJElhMnop8q1Jf4XQkuXCOG37zp7YXXtgJeQHiwAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Tests run: 5, Failures: 1, Errors: 0, Skipped: 1
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:49 min
+[INFO] Finished at: 2021-11-14T00:28:47+03:00
+[INFO] ------------------------------------------------------------------------
+[8mha:////4Nwo6PJElhMnop8q1Jf4XQkuXCOG37zp7YXXtgJeQHiwAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M1:test (default-test) on project hello-ci: There are test failures.
+[8mha:////4Nwo6PJElhMnop8q1Jf4XQkuXCOG37zp7YXXtgJeQHiwAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] 
+[8mha:////4Nwo6PJElhMnop8q1Jf4XQkuXCOG37zp7YXXtgJeQHiwAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Please refer to c:\ProgramData\slave\workspace\Hurt Me Plenty\Java\target\surefire-reports for the individual test results.
+[8mha:////4Nwo6PJElhMnop8q1Jf4XQkuXCOG37zp7YXXtgJeQHiwAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[8mha:////4Nwo6PJElhMnop8q1Jf4XQkuXCOG37zp7YXXtgJeQHiwAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] -> [Help 1]
+[8mha:////4Nwo6PJElhMnop8q1Jf4XQkuXCOG37zp7YXXtgJeQHiwAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] 
+[8mha:////4Nwo6PJElhMnop8q1Jf4XQkuXCOG37zp7YXXtgJeQHiwAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[8mha:////4Nwo6PJElhMnop8q1Jf4XQkuXCOG37zp7YXXtgJeQHiwAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[8mha:////4Nwo6PJElhMnop8q1Jf4XQkuXCOG37zp7YXXtgJeQHiwAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] 
+[8mha:////4Nwo6PJElhMnop8q1Jf4XQkuXCOG37zp7YXXtgJeQHiwAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[8mha:////4Nwo6PJElhMnop8q1Jf4XQkuXCOG37zp7YXXtgJeQHiwAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Build step 'Вызвать цели Maven верхнего уровня  ' marked build as failure
+FATAL: java.nio.channels.ClosedChannelException
+java.nio.channels.ClosedChannelException
+Also:   hudson.remoting.Channel$CallSiteStackTrace: Remote call to JNLP4-connect connection from GIrinka/192.168.43.160:62282
+		at hudson.remoting.Channel.attachCallSiteStackTrace(Channel.java:1795)
+		at hudson.remoting.Request.call(Request.java:199)
+		at hudson.remoting.Channel.call(Channel.java:1000)
+		at hudson.Launcher$RemoteLauncher.kill(Launcher.java:1148)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:526)
+		at hudson.model.Run.execute(Run.java:1888)
+		at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+		at hudson.model.ResourceController.execute(ResourceController.java:99)
+		at hudson.model.Executor.run(Executor.java:432)
+Caused: hudson.remoting.RequestAbortedException
+	at hudson.remoting.Request.abort(Request.java:345)
+	at hudson.remoting.Channel.terminate(Channel.java:1082)
+	at org.jenkinsci.remoting.protocol.impl.ChannelApplicationLayer.onReadClosed(ChannelApplicationLayer.java:238)
+	at org.jenkinsci.remoting.protocol.ApplicationLayer.onRecvClosed(ApplicationLayer.java:221)
+	at org.jenkinsci.remoting.protocol.ProtocolStack$Ptr.onRecvClosed(ProtocolStack.java:825)
+	at org.jenkinsci.remoting.protocol.FilterLayer.onRecvClosed(FilterLayer.java:288)
+	at org.jenkinsci.remoting.protocol.impl.SSLEngineFilterLayer.onRecvClosed(SSLEngineFilterLayer.java:170)
+	at org.jenkinsci.remoting.protocol.ProtocolStack$Ptr.onRecvClosed(ProtocolStack.java:825)
+	at org.jenkinsci.remoting.protocol.NetworkLayer.onRecvClosed(NetworkLayer.java:154)
+	at org.jenkinsci.remoting.protocol.impl.NIONetworkLayer.ready(NIONetworkLayer.java:179)
+	at org.jenkinsci.remoting.protocol.IOHub$OnReady.run(IOHub.java:790)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Archiving artifacts
+[8mha:////4HMukabWUxvm/tAtFwvHow1fWsxOIK1x5jXz8LWZubd2AAAAlB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhQLmEQ1U/Ozy0oLUkt0nf3BBqRDTQvPx0AHIs185oAAAA=[0mAgent went offline during the build
+ERROR: Connection was broken: java.nio.channels.ClosedChannelException
+	at org.jenkinsci.remoting.protocol.NetworkLayer.onRecvClosed(NetworkLayer.java:154)
+	at org.jenkinsci.remoting.protocol.impl.NIONetworkLayer.ready(NIONetworkLayer.java:179)
+	at org.jenkinsci.remoting.protocol.IOHub$OnReady.run(IOHub.java:790)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Build step 'Заархивировать артефакты' marked build as failure
+Finished: FAILURE
